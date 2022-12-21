@@ -12,6 +12,8 @@ Install npm-mommy like you would any other node module~
 $ npm install --global npm-mommy
 ```
 
+If you're uninstalling npm-mommy, make sure to run `npm mommy-uninstall` too~
+
 # Usage
 
 Run whatever npm command you would normally but add mommy after npm~

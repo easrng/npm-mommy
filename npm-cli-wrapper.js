@@ -1,5 +1,14 @@
 const real = require("./mommy-patched-cli.js")
 module.exports = async process => {
+  if(process.argv[2] === "mommy-uninstall") {
+    const fs = require("fs")
+    const path = require("path")
+    fs.renameSync(path.join(__dirname, "mommy-patched-cli.js"), path.join(__dirname, "cli.js"))
+    try { fs.unlinkSync(path.join(__dirname, "cli.tmp.js")) } catch (e) {}
+    fs.unlinkSync(path.join(__dirname, "mommy-patched"))
+    console.log("Bye~ ❤️")
+    process.exit(0)
+  }
   const mommyMode = process.argv[2] === "mommy"
   const mommysLittle = process.env.NPM_MOMMYS_LITTLE || process.env.CARGO_MOMMYS_LITTLE || "girl"
   if(mommyMode) {
