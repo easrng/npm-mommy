@@ -1,7 +1,5 @@
 # npm-mommy
 
-> !! not working yet, just a placeholder for now
-
 Mommy's here to support you when running npm~ ❤️
 
 Based on [cargo-mommy](https://github.com/Gankra/cargo-mommy)
@@ -11,12 +9,24 @@ Based on [cargo-mommy](https://github.com/Gankra/cargo-mommy)
 Install npm-mommy like you would any other node module~
 
 ```text
-> npm install --global npm-mommy
+$ npm install --global npm-mommy
 ```
 
 # Usage
 
 Run whatever npm command you would normally but add mommy after npm~
+
+```text
+$ npm mommy run-script build
+
+> project@0.1.0 build
+> NODE_ENV=production rollup -c
+
+created ./static/dist/ in 52.8s
+
+Good girl~
+Mommy's so proud of you~ ❤️
+```
 
 # Configuration
 

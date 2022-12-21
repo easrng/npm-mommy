@@ -1,10 +1,11 @@
 {
   "name": "npm-mommy",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "Mommy's here to support you when running npm~",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node install.js",
+    "preuninstall": "node uninstall.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/easrng/npm-mommy/issues"
   },
-  "homepage": "https://github.com/easrng/npm-mommy#readme"
+  "homepage": "https://github.com/easrng/npm-mommy#readme",
+  "dependencies": {
+    "which": "^3.0.0"
+  }
 }
