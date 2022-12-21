@@ -1,5 +1,7 @@
 # npm-mommy
 
+> !! not working yet, just a placeholder for now
+
 Mommy's here to support you when running npm~ ❤️
 
 Based on [cargo-mommy](https://github.com/Gankra/cargo-mommy)
@@ -9,7 +11,7 @@ Based on [cargo-mommy](https://github.com/Gankra/cargo-mommy)
 Install npm-mommy like you would any other node module~
 
 ```text
-> npm install npm-mommy
+> npm install --global npm-mommy
 ```
 
 # Usage
