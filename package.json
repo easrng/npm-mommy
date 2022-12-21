@@ -1,0 +1,19 @@
+{
+  "name": "npm-mommy",
+  "version": "1.0.0",
+  "description": "Mommy's here to support you when running npm~",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/easrng/npm-mommy.git"
+  },
+  "author": "https://easrng.net",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/easrng/npm-mommy/issues"
+  },
+  "homepage": "https://github.com/easrng/npm-mommy#readme"
+}
